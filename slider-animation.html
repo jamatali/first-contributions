@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation_slider-margin</title>
+    <style>
+      * {
+        margin: 0;
+      }
+
+      #slides-container {
+        width: 200%;
+        height: 100vh;
+        background-color: blue;
+        animation: move 10s linear infinite;
+      }
+
+      @keyframes move {
+        0% {
+          margin-left: 0%;
+        }
+        28.3% {
+          margin-left: -33.32%;
+        }
+        33.3% {
+          margin-left: -33.32%;
+        }
+        61.6% {
+          margin-left: -66.64%;
+        }
+        66.6% {
+          margin-left: -66.64%;
+        }
+        94.9% {
+          margin-left: -99.96%;
+        }
+        100% {
+          margin-left: -99.96%;
+        }
+      }
+      .slide {
+        width: calc(16.66% - 40px);
+        height: 100%;
+        float: left;
+        margin: 0 20px;
+        background-color: red;
+        box-sizing: border-box;
+      }
+      body{
+        overflow: hidden;
+      }
+      .kk{
+        width: 700px;
+        height: 200px;
+        margin: 100px auto;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="kk">
+        <div id="slides-container">
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+          </div>
+    </div>
+
+  </body>
+</html>
